@@ -1,63 +1,72 @@
-<ul  class="navbar-nav mr-auto d-flex align-items-center mr-3">
-    <li class="nav-item active mr-auto">
-    <a ><a routerLink='/menu'>
-        <img src="https://cdn.discordapp.com/attachments/887432929226145803/905462854222741534/logo.png" alt="logo nick" width="70px" height="70px"
-            class="img-fluid rounded-circle"></a></a>
-    </li>
-</ul>
+<div class="logo">
+  <a href="home">
+  <img src="https://i.imgur.com/mQbc4kF.png" alt="" />
+</a>
+</div>
+
 <div class="container-fluid">
-    <div class="row d-flex align-items-center">
+  <div class="row d-flex align-items-center">
+    <div class="col-md-7" id="img-bg"></div>
 
-        <div class="col-md-7" id="img-bg"></div>
-
-        <div class="col-md-5">
-
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <h1 class="text-center-mb-3">Cadastre-se</h1>
-                </div>
-            </div>
-            <div class="form-group mr-5">
-                <label for="nome">Nome</label>
-               <input class="form-control" type="text" name="nome" id="nome"
-                placeholder = "Seu Nome">
-                
-            </div>
-           
-            <div class="form-group mr-5">
-                <label for="usuario">Usuario</label>
-               <input class="form-control" type="usuario" name="usuario" id="usuario"
-                placeholder = "Seu Usuario">
-                
-            </div>
-
-            <div class="form-group mr-5">
-                <label for="email">E-mail</label>
-               <input class="form-control" type="text" name="email" id="email"
-                placeholder = "Seu E-mail">
-                
-            </div>
-
-            <div class="form-group mr-5">
-                <label for="senha">Senha</label>
-               <input class="form-control" type="password" name="senha" id="senha"
-                placeholder = "Sua senha">
-                
-            </div>
-            
-            
-
-            <hr class="mt-5 mb-5">
-
-            <p class="text-center">
-                Seja Bem Vindo!!!
-            </p>
-            <div class="d-flex justify-content-center">
-                
-                <button type="submit" class="btn btn-danger">
-                    <!--<a routerLink='/paginaInicial'></a>--> Cadastrar</button>
-            </div>
+    <div class="col-md-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center-mb-3">Cadastre-se</h1>
         </div>
-          
-        </div>
+      </div>
+      
+      <div class="form-group mr-5">
+        <label for="nome">Nome</label>
+        <input
+          class="form-control"
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Seu Nome"
+        />
+      </div>
+
+      <div class="form-group mr-5">
+        <label for="usuario">Usuario</label>
+        <input
+          class="form-control"
+          type="usuario"
+          name="usuario"
+          id="usuario"
+          placeholder="Seu Usuario"
+        />
+      </div>
+
+      <div class="form-group mr-5">
+        <label for="email">E-mail</label>
+        <input
+          class="form-control"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Seu E-mail"
+        />
+      </div>
+
+      <div class="form-group mr-5">
+        <label for="senha">Senha</label>
+        <input
+          class="form-control"
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Sua senha"
+        />
+      </div>
+
+      <hr class="mt-4 mb-4" width="495" />
+
+      <p class="text-center justify align-center mr-5">Seja Bem Vindo!!!</p>
+      <div class="d-flex justify-content-center mr-5">
+        <button type="submit" class="btn btn-danger botao">
+          <!--<a routerLink='/paginaInicial'></a>--> Cadastrar
+        </button>
+      </div>
+    </div>
   </div>
+</div>

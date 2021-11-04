@@ -1,3 +1,20 @@
+.logo {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 7px;
+}
+
 #img-bg{
     background-image: url("https://cdn.discordapp.com/attachments/887432929226145803/905509630044672040/unknown.png");
 

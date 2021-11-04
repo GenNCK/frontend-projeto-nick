@@ -49,6 +49,7 @@ nav ul li a:hover {
     color: #000;
 }
 
+
 .botoes {
     display: flex;
     align-items: center;
@@ -58,7 +59,7 @@ nav ul li a:hover {
 .botoes button {
     width: 80px;
     height: 35px;
-    padding: 0 5px;
+    padding: 0;
     border-radius: 4px;
     border: transparent;
     background: transparent;
@@ -79,6 +80,26 @@ nav ul li a:hover {
     color: #fff;
 }
 
+
 .botoes button.cadastrar {
     background: salmon;
+}
+
+
+.link-botao-entrar{
+    color: salmon;
+    transition: all 400ms ease;
+    text-decoration: none;
+    width: 100px !important;
+    height: 100px !important;
+    
+}
+
+.link-botao-entrar:hover{
+    color: #fff;
+}
+
+.link-botao-cadastrar{
+    text-decoration: none;
+    color: #fff;
 }
