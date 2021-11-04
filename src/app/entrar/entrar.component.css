@@ -1,0 +1,10 @@
+#img-bg{
+    background-image: url("https://cdn.discordapp.com/attachments/887432929226145803/905509630044672040/unknown.png");
+
+    min-height: 500px;
+
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

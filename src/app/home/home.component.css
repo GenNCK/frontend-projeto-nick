@@ -1,0 +1,52 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+}
+
+.home-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.home-item.esquerda {
+    position: relative;
+    flex: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.home-item.esquerda h1 {
+    position: absolute;
+    bottom: 300px;
+    padding-left: 20px;
+}
+
+.home-item.esquerda p {
+    position: absolute;
+    right: -180px;
+    bottom: 40px;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+.home-item.direita {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-item.direita img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
