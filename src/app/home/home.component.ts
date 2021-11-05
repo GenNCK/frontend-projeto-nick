@@ -12,4 +12,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hamburguer():any{
+    const menu = document.querySelector('.toggle');
+    const home = document.querySelector('.home');
+    menu?.classList.toggle('ativo');
+    home?.classList.toggle('ativo');
+  }
+
 }

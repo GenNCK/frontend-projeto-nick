@@ -1,105 +1,157 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /*Tudo que está em linha ele coloca nas extremidades*/
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 10px 20px;
 }
 
 header .logo {
-    position: relative;
-    width: 65px;
-    height: 65px;
-    overflow: hidden;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+}
+
+button#hamburguer {
+  display: none;
 }
 
 .logo img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 nav ul li {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: rgba(0, 0, 0, .4);
+  text-decoration: none;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 nav ul li a:hover {
-    color: #000;
+  color: #000;
 }
-
 
 .botoes {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
-.botoes button {
-    width: 80px;
-    height: 35px;
-    padding: 0;
-    border-radius: 4px;
-    border: transparent;
-    background: transparent;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
+.botoes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 35px;
+  padding: 0;
+  border-radius: 4px;
+  border: transparent;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none; /*Comando usado para tirar o link que vem do href*/
+}
+
+.botoes a.entrar {
+  border: solid 1px salmon;
+  color: salmon;
+  transition: all 400ms ease;
+}
+
+.botoes a.entrar:hover {
+  background: salmon;
+  color: #fff;
+}
+
+.botoes a.cadastrar {
+  background: salmon;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Esse comando deixará a home responsiva no mobile*/
+  nav {
+    display: none;
+  }
+  button#hamburguer {
+    display: block;
+    border: none;
+    background: none;
     outline: none;
-}
+  }
 
-.botoes button.entrar {
-    border: solid 1px salmon;
-    color: salmon;
-    transition: all 400ms ease;
-}
+  .toggle {
+    /*Estilizando o botão de menu (Que aparecerá no mobile)*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    clip-path: circle(); /*Nesse caso, o comando está deixando o botão redondo*/
+    cursor: pointer;
+    transition: 0.2s; /*Em mobile o menu terá uma transição quando clicar no botão*/
+  }
 
-.botoes button.entrar:hover {
+  .toggle.ativo{
     background: salmon;
-    color: #fff;
+  }
+
+  .toggle::before { /*Criando as barrinhas do botão menu. Primeiro traço do X*/
+    content: ""; /*Ele está criando um elemento*/
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #444;
+    box-shadow: 0 10px 0 #444;
+    transform: translateY(-10px);
+  }
+
+  .toggle.ativo::before{
+    background: #fff;
+    box-shadow: 0 10px 0 #fff;
+    box-shadow: 0 0 0 #fff;
+    transform: translateY(0) rotate(45deg); /*Criando o X do botão*/
+  }
+
+  .toggle::after { /*Segundo traço do X*/
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #444;
+    transform: translateY(10px);/*Emburrar o elemento 10px pra baixo*/
+  }
+
+  .toggle.ativo::after{
+    background: #fff;
+    transform: translateY(0) rotate(-45deg);
+  }
+
 }
 
 
-.botoes button.cadastrar {
-    background: salmon;
-}
-
-
-.link-botao-entrar{
-    color: salmon;
-    transition: all 400ms ease;
-    text-decoration: none;
-    width: 100px !important;
-    height: 100px !important;
-    
-}
-
-.link-botao-entrar:hover{
-    color: #fff;
-}
-
-.link-botao-cadastrar{
-    text-decoration: none;
-    color: #fff;
-}
