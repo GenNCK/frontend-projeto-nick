@@ -15,10 +15,14 @@
     padding: 7px;
 }
 
+h1{
+    font-family: 'Cormorant Garamond', serif;
+}
+
 #img-bg{
     background-image: url("https://i.imgur.com/YX1wgLH.jpg");
 
-    min-height: 700px;
+    min-height: 590px;
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;
