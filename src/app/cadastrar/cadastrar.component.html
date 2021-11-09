@@ -38,6 +38,16 @@
       </div>
 
       <div class="form-group mr-5">
+        <label for="foto">Link da Foto</label>
+        <input 
+        class="form-control" 
+        type="text" 
+        name="foto" 
+        id="foto" 
+        placeholder="Link da sua Foto">
+    </div>
+
+      <div class="form-group mr-5">
         <label for="email">E-mail</label>
         <input
           class="form-control"
@@ -59,14 +69,42 @@
         />
       </div>
 
+      <div class="form-group mr-5">
+        <label for="confirmSenha">Confirmar Senha</label>
+        <input
+          class="form-control"
+          type="password"
+          name="confirmSenha"
+          id="confirmSenha"
+          placeholder="Confirme sua senha"
+        />
+      </div>
+
+      <div class="form-group mr-5">
+        <label for="tipo">Tipo de Usuário</label>
+        <select 
+        class="form-control" 
+        name="tipo" 
+        id="tipo">
+            <option>Selecione um tipo de Usuário: </option>
+            <option value="normal">Normal</option>
+            <option value="adm">Administrador</option>
+        </select>
+    </div>
+
+
       <hr class="mt-4 mb-4" width="495" />
 
       <p class="text-center justify align-center mr-5">Seja Bem Vindo!!!</p>
-      <div class="d-flex justify-content-center mr-5">
-        <button type="submit" class="btn btn-danger botao">
-          <!--<a routerLink='/paginaInicial'></a>--> Cadastrar
+
+      <div class="d-flex justify-content-center mr-5 mb-5">
+        
+        <button type="submit" class="btn btn-secondary mr-4" routerLink='/entrar'>Cadastrar
         </button>
+
+        <button type="submit" class="btn btn-dark mr-4" routerLink='/home'>Cancelar</button>
       </div>
     </div>
   </div>
 </div>
+ 
