@@ -11,6 +11,8 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { HomeComponent } from './home/home.component';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
+import { EncimaComponent } from './encima/encima.component';
+
 
 
 
@@ -22,7 +24,10 @@ import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.componen
     EntrarComponent,
     CadastrarComponent,
     HomeComponent,
-    PaginaInicialComponent
+    PaginaInicialComponent,
+    EncimaComponent,
+   
+    
   ],
   imports: [
     BrowserModule,
@@ -34,3 +39,4 @@ import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.componen
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
