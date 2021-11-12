@@ -7,3 +7,6 @@
     box-sizing: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
