@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -12,6 +13,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { HomeComponent } from './home/home.component';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import { EncimaComponent } from './encima/encima.component';
+import { TemaComponent } from './tema/tema.component';
 
 
 
@@ -26,6 +28,7 @@ import { EncimaComponent } from './encima/encima.component';
     HomeComponent,
     PaginaInicialComponent,
     EncimaComponent,
+    TemaComponent,
    
     
   ],
@@ -35,7 +38,9 @@ import { EncimaComponent } from './encima/encima.component';
     HttpClientModule, 
     FormsModule
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

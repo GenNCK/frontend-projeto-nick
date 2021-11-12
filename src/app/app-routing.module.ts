@@ -4,6 +4,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { HomeComponent } from './home/home.component';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
+import { TemaComponent } from './tema/tema.component';
 
 
 
@@ -14,8 +15,7 @@ const routes: Routes = [
   {path:'cadastrar',component: CadastrarComponent},
   {path: 'home', component: HomeComponent},
   {path: 'paginaInicial', component: PaginaInicialComponent},
-
-
+  {path: 'tema', component: TemaComponent}
 ];
 
 @NgModule({
