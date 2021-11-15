@@ -20,7 +20,7 @@
                 <input [(ngModel)]='tema.classificacao' type="text" class="form-control" id="classificacao" placeholder="Qual a classificacao do tema">
               </div>
               <div class="form-group">
-                <input [(ngModel)]='tema.impacto' type="text" class="form-control" id="impacto" placeholder="Qual o impato ">
+                <input [(ngModel)]='tema.impacto' type="text" class="form-control" id="impacto" placeholder="Qual o impacto ">
               </div>
             
   
@@ -66,8 +66,8 @@
               <td>{{i.classificacao}} </td>
               <td>{{i.impacto}}</td>
               <td class="d-flex justify-content-end">
-                <button class="btn btn-info mr-3 text-right">Editar</button>
-                <button class="btn btn-danger">Apagar</button>
+                <button class="btn btn-info mr-3 text-right "[routerLink] = "['/tema-edit',i.id]">Editar</button>
+                <button class="btn btn-danger"[routerLink] = "['/tema-delete',i.id]">Apagar</button>
               </td>
             </tr>
           </tbody>

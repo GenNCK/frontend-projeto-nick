@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import { EncimaComponent } from './encima/encima.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 
 
@@ -29,6 +31,8 @@ import { TemaComponent } from './tema/tema.component';
     PaginaInicialComponent,
     EncimaComponent,
     TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent,
    
     
   ],

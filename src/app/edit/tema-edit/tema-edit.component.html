@@ -1,0 +1,26 @@
+<app-encima></app-encima>
+
+<div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+
+        <div class="form-group">
+            <label for="titulo">Titulo</label>
+            <input type="text" class="form-control" id="titulo" [(ngModel)]='tema.titulo'>
+        </div>
+        <div class="form-group">
+            <label for="classificacao">Classificação</label>
+            <input type="text" class="form-control" id="classificacao" [(ngModel)]='tema.classificacao'>
+        </div>
+        <div class="form-group">
+            <label for="impacto">Impacto</label>
+            <input type="text" class="form-control" id="impacto" [(ngModel)]='tema.impacto'>
+        </div>
+
+        <div class="justify-content-center">
+            <button class="btn btn-danger mr-4" routerLink='/tema'>Cancelar</button>
+            <button class="btn btn-success" (click)='atualizar()'>Atualizar</button>
+        </div>
+
+    </div>
+</div>
+
