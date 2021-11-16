@@ -54,7 +54,7 @@ export class PaginaInicialComponent implements OnInit {
   }
 
   getAllPostagens(){
-    this.postagemService.getAllPostagem().subscribe((resp: Postagem[]) => {
+    this.postagemService.getAllPostagens().subscribe((resp: Postagem[]) => {
       this.listaPostagens = resp
     })
   }
