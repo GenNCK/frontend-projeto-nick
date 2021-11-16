@@ -96,26 +96,30 @@ aria-hidden="true">
         <div class="modal-body">
 
             <div class="form-group">
-                <label for="titulo">Titulo</label>
-                <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
+                <label for="resumo">titulo</label>
+                <input [(ngModel)]='postagem.resumo' type="text" class="form-control" id="resumo" placeholder="Digite o resumo">
             </div>
-
+            <div class="form-group">
+              <label for="privacidade">titulo</label>
+              <input [(ngModel)]='postagem.privacidade' type="text" class="form-control" id="privacidade" placeholder="informe a sua privacidade">
+          </div>
             <div class="form-group">
                 <label for="texto">Texto</label>
-                <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+                <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
             </div>
             <div class="form-group">
                 <label for="tema">Escolha um tema ou <a  data-dismiss="modal"routerLink='/tema'>cadastre um novo</a>:</label>
-                <select name="tema" id="tema" class="form-control" >
-                    <option value="">Temas</option>
+                <select name="tema" id="tema" class="form-control" [(ngModel)]= 'idTema'(change)='findByIdTema' >
+                    <option *ngFor='let i of listaTemas' value="{{i.id}}">{{i.titulo}}</option>
                 </select>
             </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-success">Publicar</button>
+            <button type="button" class="btn btn-success" (click)='publicar()' data-dismiss="modal">Publicar</button>
         </div>
     </div>
 </div>
 </div>
+
 
