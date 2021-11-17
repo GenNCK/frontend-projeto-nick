@@ -76,8 +76,8 @@
                 {{i.data | date: 'dd/MM/yyyy'}} as {{i.data | date:'HH:mm'}}
               </small></p>
 
-            <a href="">Editar</a>
-            <a href="">Apagar</a>
+            <a [routerLink]="['/postagem-edit', i.id]" class="text-info mr-3" href="">Editar</a>
+            <a  [routerLink]="['/postagem-delete', i.id]" class="text-danger" href="">Apagar</a>
           </div>
         </div>
       </div>

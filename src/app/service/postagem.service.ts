@@ -26,7 +26,13 @@ export class PostagemService {
  }
 
  postPostagem(postagem: Postagem): Observable<Postagem>{ 
-  return this.http.post<Postagem>('https://projenick.herokuapp.com/postagem', postagem, this.token
-  )
+  return this.http.post<Postagem>('https://projenick.herokuapp.com/postagem', postagem, this.token)
  }
+ putPostagem(postagem: Postagem): Observable<Postagem>{ 
+  return this.http.put<Postagem>('https://projenick.herokuapp.com/postagem', postagem, this.token)
+ }
+ deletePostagem(id: number){
+  return this.http.delete(`https://projenick.herokuapp.com/postagem/${id}`, this.token)
+}
+
 }
