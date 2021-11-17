@@ -1,13 +1,8 @@
 ul.social-network{
     list-style:  none;
-    padding: 0;
 }
-ul.social-network li{
-    display: inline;
-    margin: 0;
-    padding: 5px;
 
-}
+
 .fa{
     font-size: 35pt;
     color: black;
@@ -16,18 +11,23 @@ ul.social-network li{
 }
 
 .fa-instagram:hover{
-    color: black;
+    color: rgb(95, 92, 92);
 }
 
 
 .fa-github:hover{
-    color: black;
+    color: rgb(95, 92, 92);
 }
 
 .page-footer{
-    background-color: #F5CDD4;
+    background-color: #E7D6D9;
 }
 
 .estilo{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.estilo2{
+    font-family: 'Cormorant Garamond', serif;
 }
