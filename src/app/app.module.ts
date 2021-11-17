@@ -19,6 +19,7 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
@@ -49,7 +50,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
     FormsModule
   ],
   providers: [
-
+    
   ],
   bootstrap: [AppComponent]
 })

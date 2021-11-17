@@ -16,6 +16,7 @@ import { TemaService } from '../service/tema.service';
 export class PaginaInicialComponent implements OnInit {
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
+  
 
   tema: Tema = new Tema()
   listaTemas: Tema[]
