@@ -17,11 +17,12 @@ export class PaginaInicialComponent implements OnInit {
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
   
-
+  usuario: User = new User()
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number  
   foto = environment.foto
+  id = environment.id
 
   user: User = new User()
   idUser = environment.id
