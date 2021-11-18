@@ -17,22 +17,22 @@ export class PostagemService {
   }
    
   getAllPostagens(): Observable<Postagem[]>{ 
-    return this.http.get<Postagem[]>('https://projenick.herokuapp.com/postagem', this.token
+    return this.http.get<Postagem[]>('https://nickporjeto.herokuapp.com/postagem', this.token
     )
  }
 
  getByIdPostagem(id: number): Observable<Postagem>{
-  return this.http.get<Postagem>(`https://projenick.herokuapp.com/postagem/${id}`, this.token)
+  return this.http.get<Postagem>(`https://nickporjeto.herokuapp.com/postagem/${id}`, this.token)
  }
 
  postPostagem(postagem: Postagem): Observable<Postagem>{ 
-  return this.http.post<Postagem>('https://projenick.herokuapp.com/postagem', postagem, this.token)
+  return this.http.post<Postagem>('https://nickporjeto.herokuapp.com/postagem', postagem, this.token)
  }
  putPostagem(postagem: Postagem): Observable<Postagem>{ 
-  return this.http.put<Postagem>('https://projenick.herokuapp.com/postagem', postagem, this.token)
+  return this.http.put<Postagem>('https://nickporjeto.herokuapp.com/postagem', postagem, this.token)
  }
  deletePostagem(id: number){
-  return this.http.delete(`https://projenick.herokuapp.com/postagem/${id}`, this.token)
+  return this.http.delete(`https://nickporjeto.herokuapp.com/postagem/${id}`, this.token)
 }
 
 }
