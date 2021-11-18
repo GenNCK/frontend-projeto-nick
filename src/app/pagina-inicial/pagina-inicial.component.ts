@@ -21,6 +21,7 @@ export class PaginaInicialComponent implements OnInit {
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number  
+  foto = environment.foto
 
   user: User = new User()
   idUser = environment.id
@@ -29,7 +30,7 @@ export class PaginaInicialComponent implements OnInit {
     private router: Router,
     private postagemService: PostagemService,
     private temaService: TemaService,
-    private authService: AuthService
+    public authService: AuthService
   ) { }
 
   ngOnInit(){

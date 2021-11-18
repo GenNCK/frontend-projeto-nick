@@ -1,12 +1,12 @@
 
-<div class="bgFundo">
+<div class="bgFundo ">
   <app-encima></app-encima>
   <div class="container-fluid">
     <div class="row d-flex justify-content-center">
       <div class="row">
         <div class="col-md-12 d-flex justify-content-center">
           <div class="row">
-            <div class="col-md-12 text-dark">
+            <div class="col-md-12 text-dark direita">
               <h4 class="fs-1">Faça sua Postagem!!</h4>
             </div>
           </div>
@@ -20,7 +20,7 @@
 
 
   <div class="container fundo">
-    <button class="btn btn-danger" data-toggle="modal" data-target="#novaPostagem">Nova postagem</button>
+    <button class="btn btn fundo2 text-white  " data-toggle="modal" data-target="#novaPostagem">Publicar</button>
   </div>
 
   <div class="container mb-5 mt-5 " id="postagens">
@@ -47,32 +47,32 @@
         aria-labelledby="nav-todasPostagens-tab">
 
         <div class="card text-lef mb-5 direita" *ngFor='let i of listaPostagens'>
-          <div class="card-header">
-            <h5>{{i.tema.titulo}}</h5>
-          </div>
-          <div class="card-body d-flex align-items-center justify-content-between">
-            <div class="col-md-2">
-              <img
-                src="https://static-cse.canva.com/blob/183616/Como-Tirar-e-Editar-Sua-Foto-para-Perfil-em-Redes-Sociais-featuredimage-e1559023010630.121d5a89.jpg"
-                alt="" width="100px" height="100px" class="rounded-circle">
+            <div class="card-header">
+              <h5>{{i.tema.titulo}}</h5>
             </div>
+            <div class="card-body d-flex align-items-center justify-content-between">
+              <div class="col-md-2">
+                <img
+                  src="{{foto}}"
+                  alt="" width="100px" height="100px" class="rounded-circle">
+              </div>
 
-            <div class="col-md-7">
-              <h5 class="card-title">{{i.resumo}}</h5>
-              <p class="card-text">{{i.texto}}</p>
-            </div>
+              <div class="col-md-7">
+                <h5 class="card-title">{{i.resumo}}</h5>
+                <p class="card-text">{{i.texto}}</p>
+              </div>
 
-            <div class="col-md-3 d-flex align-items-end justify-content-center">
-              <p><small class="text-muted">
-                  {{i.data | date: 'dd/MM/yyyy'}} ás {{i.data | date:'HH:mm'}}
-                </small>
-                <small class="text-muted">
-                   &nbsp; por: {{i.usuario.nome}}
-                </small>
-              </p>
+              <div class="col-md-3 d-flex align-items-end justify-content-center">
+                <p><small class="text-muted">
+                    {{i.data | date: 'dd/MM/yyyy'}} ás {{i.data | date:'HH:mm'}}
+                  </small>
+                  <small class="text-muted">
+                    &nbsp; por: {{i.usuario.nome}}
+                  </small>
+                </p>
 
 
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -82,29 +82,37 @@
         <div class="card text-left scrollAuto direita mb-5" *ngFor='let i of user.postagem'>
           <div class="card-header">
             <h5>{{i.tema.titulo}}</h5>
+            </div>
+
 
             <div class="card-body">
               <h5 class="card-title"></h5>
-              <p class="card-text">{{i.resumo}}</p>
-              <p class="card-text">{{i.texto}}<small class="text-muted">
-                  {{i.data | date: 'dd/MM/yyyy'}} as {{i.data | date:'HH:mm'}}
+              <h5 class="card-text">{{i.resumo}}</h5>
+              <p class="card-text">{{i.texto}}</p>
+              <p><small class="text-muted">
+                {{i.data | date: 'dd/MM/yyyy'}} as {{i.data | date:'HH:mm'}}
+              </small></p> 
+              <p ><small class="text-muted">
+                  <a [routerLink]="['/postagem-edit', i.id]" class="text-info mr-3" href="">Editar</a>
+                  <a [routerLink]="['/postagem-delete', i.id]" class="text-danger" href="">Apagar</a>
                 </small></p>
-
-              <a [routerLink]="['/postagem-edit', i.id]" class="text-info mr-3" href="">Editar</a>
-              <a [routerLink]="['/postagem-delete', i.id]" class="text-danger" href="">Apagar</a>
+               
+             
             </div>
           </div>
         </div>
 
-      </div>
+      
 
       <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
         <div *ngFor='let tema of listaTemas'>
           <div class="card text-left direita mb-5" *ngFor='let i of tema.postagem'>
-
-            <div class="card-body">
-              <p>{{tema.titulo}}</p>
+            
+              <div class="card-header">
+                <h5>{{tema.titulo}}</h5>
+              </div>
+              <div class="card-body">
               <h5 class="card-title">{{i.resumo}}</h5>
               <p class="card-text">{{i.texto}}</p>
               <p class="card-text"><small class="text-muted">

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { environment } from 'src/environments/environment.prod';
 import { UserLogin } from '../model/UserLogin';
 import { AuthService } from '../service/auth.service';
@@ -32,7 +33,7 @@ export class EntrarComponent implements OnInit {
  
       
 
-      console.log
+      this.userLogin.foto
       this.router.navigate(['/paginaInicial'])
     }, erro =>{
       if(erro.status == 500){

@@ -2,6 +2,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +20,7 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 
 
@@ -49,7 +50,10 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     HttpClientModule, 
     FormsModule
   ],
-  providers: [
+  providers: [{
+    provide:LocationStrategy ,
+    useClass: HashLocationStrategy
+  }
     
   ],
   bootstrap: [AppComponent]

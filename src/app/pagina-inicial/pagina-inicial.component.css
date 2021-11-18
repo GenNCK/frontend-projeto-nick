@@ -5,10 +5,14 @@
 
 
 .fundo{
-    padding-left: 7.3rem !important;
+    padding-left: 64rem !important;
     height: auto;
 }
 
+.fundo2{
+    background: #4c0121
+    
+}
 .col-md-3{
     width: 100%;
     height: 15vh;
@@ -16,7 +20,7 @@
 }
 .col-md-3 p {
 display: flex;  
-justify-content: end;   
+position: relative;  
 column-gap: 1rem ;
 width: 100%;
 }
@@ -57,3 +61,4 @@ width: 100%;
   .transp{
       background: transparent;
   }
+  
