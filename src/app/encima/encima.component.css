@@ -101,3 +101,7 @@ h1 {
   letter-spacing: 6px;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
+.fotoR{
+  object-fit:scale-down;
+ 
+}
