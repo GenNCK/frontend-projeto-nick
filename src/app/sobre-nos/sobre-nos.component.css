@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: white;
   font-family: Raleway, sans-serif;
@@ -14,7 +13,6 @@ body {
 br {
   margin-bottom: 2%;
 }
-
 .header {
   width: 100%;
   height: 80vh;
@@ -23,14 +21,12 @@ br {
   grid-template-rows: max-content 1fr;
   grid-template-columns: 1fr max-content;
 }
-
 .logo {
   position: relative;
   width: 65px;
   height: 65px;
   overflow: hidden;
 }
-
 .logo img {
   position: absolute;
   top: 0;
@@ -40,7 +36,6 @@ br {
   object-fit: cover; /* As dimensões do elemento substituído são alteradas, ele preenche todo o container e é mantida a sua razão de aspecto (aspect ratio);*/
   padding: 7px;
 }
-
 .header logo {
   fill: white;
   width: 3rem;
@@ -56,8 +51,6 @@ br {
   filter: brightness(80%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
 }
 .headerTitle {
@@ -80,11 +73,9 @@ br {
   cursor: pointer;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
-
 .aboutTitle {
   padding-top: 4rem;
   text-align: center;
-
 }
 .aboutTitleText {
   color: #232323;
@@ -93,59 +84,46 @@ br {
 .aboutText {
   width: 80%;
   margin: 5% auto;
-
 }
 .aboutTextContent {
   text-align: justify;
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
 }
-
 .media-body{
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
 }
-
 .equipe{
   font-family: 'Cormorant Garamond', serif;
 }
-
 .parceiros{
   font-family: 'Cormorant Garamond', serif;
 }
-
 .imgFundo{
   background: #F2E1F2;
 }
-
 .cabecalho{
   text-align: justify;
   width: 80%;
   margin: 5% auto;
 }
-
 .fotoCabecalho{
   width: 25%;
   height: 25%;
 }
-
 /*CARD DA EQUIPE*/
-
-
-
 .container {
   max-width: 1100px;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
 }
-
 .card-wrapper {
   width: 320px;
   height: 430px;
   position: relative;
 }
-
 .card {
   position: absolute;
   top: 50%;
@@ -159,33 +137,22 @@ br {
   cursor: pointer;
   transition: 0.5s;
 }
-
 .card .card-image {
   position: absolute;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 100%;
   z-index: 2;
   background-color: #000;
   transition: 0.5s;
 }
-
 .card .card-image img{
   width: 100%;
   height: 100%;
 }
-
-.card:hover img {
-  opacity: 0.4;
-  transition: 0.5s;
-}
-
 .card:hover .card-image {
   transform: translateY(-100px);
   transition: all 0.9s;
 }
-
 /**** Social Icons *****/
 .social-icons {
   position: absolute;
@@ -212,22 +179,18 @@ br {
   margin: 0 6px;
   transition: 0.4s;
   transform: translateY(200px);
-  opacity: 0;
 }
-
 .card:hover .social-icons li a {
   transform: translateY(0px);
   opacity: 1;
 }
-
-.social-icons li a:hover {
+.social-icons li a:hover { /*Dá pra tirar*/
   background: #000;
   transition: 0.2s;
 }
 .social-icons li a:hover .fab {
   color: #fff;
 }
-
 .social-icons li a .fab {
   transition: 0.8s;
 }
@@ -235,23 +198,18 @@ br {
   transform: rotateY(360deg);
   color: #fff;
 }
-
 .card:hover li:nth-child(1) a {
   transition-delay: 0.1s;
 }
-
 .card:hover li:nth-child(2) a {
   transition-delay: 0.2s;
 }
-
 .card:hover li:nth-child(3) a {
   transition-delay: 0.3s;
 }
-
 .card:hover li:nth-child(4) a {
   transition-delay: 0.4s;
 }
-
 /**** Personal Details ****/
 .details {
   position: absolute;
@@ -264,48 +222,35 @@ br {
   padding: 0px;
   font-family: 'Cormorant Garamond', serif;
 }
-
 .details h2 {
   margin: 0px 0;
   padding: 0;
   text-align: center;
 }
-
 .details h2 .job-title {
   font-size: 1rem;
   line-height: 2.5rem;
   color: #333;
   font-weight: 300;
 }
-
-.profile-two .social-icons li a {
-  border-radius: 50%;
-}
-
 .card:hover .profile-img--two {
   transform: rotateY(180deg);
 }
-
-
-
 /*PARCEIROS*/
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-
 .flip-boxes {
   justify-content: center;
 }
-
 .flip-box {
   display: flex;
-  align-content: stretch;
+  /*align-content: stretch;*/
   min-height: 200px;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   position: relative;
   border: 10px solid transparent;
   padding: 0;
@@ -349,7 +294,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  /*left: 0;*/
   width: 30px;
   height: 30px;
   border: 15px solid transparent;
