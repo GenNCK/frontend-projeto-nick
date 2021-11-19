@@ -53,7 +53,7 @@
             <div class="card-body d-flex align-items-center justify-content-between">
               <div class="col-md-2">
                 <img
-                  src="{{foto}}"
+                  src="{{i.usuario.foto}}"
                   alt="" width="100px" height="100px" class="rounded-circle">
               </div>
 
@@ -146,19 +146,22 @@
           <div class="modal-body">
 
             <div class="form-group">
-              <label for="resumo">Resumo</label>
+              <label for="resumo">Resumo do seu depoimento!</label>
               <input [(ngModel)]='postagem.resumo' type="text" class="form-control" id="resumo"
                 placeholder="Digite o resumo">
             </div>
+
             <div class="form-group">
               <label for="privacidade">Privacidade</label>
               <input [(ngModel)]='postagem.privacidade' type="text" class="form-control" id="privacidade"
                 placeholder="informe a sua privacidade">
             </div>
+
             <div class="form-group">
               <label for="texto">Texto</label>
               <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
             </div>
+            
             <div class="form-group">
               <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um
                   novo</a>:</label>

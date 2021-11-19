@@ -1,10 +1,10 @@
 <div class="header">
-  <app-menu></app-menu>
+  <app-menu-forum></app-menu-forum>
 
   <div class="headerBg"></div>
   <div class="headerLogo"></div>
 
-  <h1 class="headerTitle"><strong>Fazendo a Diferência.</strong></h1>
+  <h1 class="headerTitle"><strong>Fazendo a Diferença.</strong></h1>
 </div>
 
 <div>
@@ -77,7 +77,7 @@
 
 
 <div class="aboutText">
-  <h2 class="d-flex justify-content-center font-italic equipe"><strong>Nosso Time!</strong></h2>
+  <h2 class="d-flex justify-content-center font-italic equipe" id="equipe"><strong>Nosso Time!</strong></h2>
   <hr>
   <p class="aboutTextContent mt-5">
     Nosso time é formado por profissionais qualificados, utilizamos os nossos conhecimentos técnicos para a colaboração na transformação e evolução da sociedade. Somos desenvolvedores Fullstack formados pela Generation Brasil!
@@ -88,7 +88,7 @@
 
 <!--CARD DA EQUIPE 1-->
 
-<div class="container" id="equipe">
+<div class="container">
 
   <div class="card-wrapper">
     
@@ -119,6 +119,36 @@
     </div>
   </div>
 </div><!-- end box wrapper --> 
+
+<div class="card-wrapper">
+    
+  <div class="card">
+    
+    <div class="card-image">
+      <img src="https://i.imgur.com/ePCovBt.jpg" alt="Danilo Silva">
+    </div>
+  
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.linkedin.com/in/danilo-da-silva-76ab10188/" target="_blank" class="icoLinkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/DaniloDaSilv" target="_blank" class="icoGithub">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  
+  <div class="details">
+    <h2>Danilo da Silva
+      <br>
+      <span class="job-title">Cargo</span>
+    </h2>
+  </div>
+  </div>
+  </div><!-- end box wrapper --> 
 
 
 
@@ -153,39 +183,6 @@
   </div>
 </div>
 </div><!-- end box wrapper --> 
-
-
-
-<div class="card-wrapper">
-    
-<div class="card">
-  
-  <div class="card-image">
-    <img src="https://i.imgur.com/xur4Byn.jpg" alt="Danilo Silva">
-  </div>
-
-  <ul class="social-icons">
-    <li>
-      <a href="https://www.linkedin.com/in/danilo-da-silva-76ab10188/" target="_blank" class="icoLinkedin">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/DaniloDaSilv" target="_blank" class="icoGithub">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-
-<div class="details">
-  <h2>Danilo da Silva
-    <br>
-    <span class="job-title">Cargo</span>
-  </h2>
-</div>
-</div>
-</div><!-- end box wrapper --> 
-
 
 
 
@@ -227,7 +224,7 @@
 
 
 <div class="aboutText">
-  <h2 class="d-flex justify-content-center font-italic parceiros"><strong>Conheça outras ONG'S</strong></h2>
+  <h2 class="d-flex justify-content-center font-italic parceiros" id="ONG's"><strong>Conheça outras ONG'S</strong></h2>
   <hr>
   <p class="aboutTextContent mt-5 d-flex justify-content-center">
     Aqui você encontrará outras ONG's que tem o mesmo objetivo de desenvolver e transformar o mundo através da tecnologia. 
@@ -241,49 +238,48 @@
 <!--CARD DE PARCEIRO-->
 
 <div class="containerr">
-<div class="row flip-boxes">
-<div class="col-md-3 col-sm-4 col-8 flip-box">
-  <div class="front" style="background-image: url(https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&h=350);">
-    <div class="content text-center">
-      First<br>
-      <span class="click-for-more">
-      </span>
+  <div class="row flip-boxes">
+  <div class="col-md-3 col-sm-4 col-8 flip-box">
+    <div class="front" style="background-image: url(https://i.imgur.com/SflfAOL.png);">
+      <div class="content text-center"><br>
+        <span class="click-for-more">
+        </span>
+      </div>
+    </div>
+    <div class="back">
+      <div class="content">
+        <a href="https://gen60plus.netlify.app/" target="_blank">Gen60+</a>
+      </div>
     </div>
   </div>
-  <div class="back">
-    <div class="content">
-      First Back
+  
+  <div class="col-md-3 col-sm-4 col-6 flip-box">
+    <div class="front" style="background-image: url(https://i.imgur.com/Am7eK2q.png);">
+      <div class="content" >
+      </div>
+    </div>
+    <div class="back">
+      <div class="content">
+        <a href="https://gen60plus.netlify.app/" target="_blank">Rento</a>
+      </div>
     </div>
   </div>
-</div>
-<div class="col-md-3 col-sm-4 col-6 flip-box">
-  <div class="front" style="background-image: url(https://thumbs.dreamstime.com/b/countryside-landscape-hillside-beautiful-scenic-view-river-rural-fields-summer-season-89540702.jpg);">
-    <div class="content" >
-      Second
+  
+  <div class="col-md-3 col-sm-4 col-6 flip-box">
+    <div class="front" style="background-image: url(https://i.imgur.com/J9U1GGY.png);">
+      <div class="content">
+      </div>
+    </div>
+    <div class="back">
+      <div class="content">
+        <a href="https://gen60plus.netlify.app/" target="_blank">Toddes Company</a>
+      </div>
     </div>
   </div>
-  <div class="back">
-    <div class="content">
-      Second Back
-    </div>
   </div>
-</div>
-<div class="col-md-3 col-sm-4 col-6 flip-box">
-  <div class="front" style="background-image: url(https://llandscapes-ee1.kxcdn.com/wp-content/uploads/2017/09/33945202050_48027b6b38_z.jpg);">
-    <div class="content">
-      Third
-    </div>
   </div>
-  <div class="back">
-    <div class="content">
-      Third Back
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<div style="height: 100px"></div>
+  
+  <div style="height: 100px"></div>
 
 
 
