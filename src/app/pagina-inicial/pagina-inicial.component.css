@@ -38,7 +38,7 @@ width: 100%;
     }
 .scroll{
     overflow-y: scroll ;
-    height: 900px;
+    height: 700px;
     padding-right: 10px;
 }
 ::-webkit-scrollbar {

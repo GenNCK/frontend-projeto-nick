@@ -6,6 +6,7 @@ export class Postagem{
     public privacidade: string
     public resumo: string
     public texto: string
+    public imagem: string
     public data: Date
     public usuario:User
     public tema: Tema

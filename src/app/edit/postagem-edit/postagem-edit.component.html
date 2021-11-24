@@ -14,11 +14,19 @@
                 <input [(ngModel)]='postagem.resumo' type="text" class="form-control" id="resumo"
                   placeholder="Digite o resumo">
               </div>
+              
               <div class="form-group">
                 <label for="privacidade">Impacto</label>
                 <input [(ngModel)]='postagem.privacidade' type="text" class="form-control" id="privacidade"
                   placeholder="Grande; Moderado ou Baixo">
               </div>
+
+              <div class="form-group">
+                <label for="imagem">Imagem</label>
+                <input [(ngModel)]='postagem.imagem' type="text" class="form-control" id="imagem"
+                  placeholder="Informe uma imagem pra sua postagem">
+              </div>
+
               <div class="form-group">
                 <label for="texto">Texto</label>
                 <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
