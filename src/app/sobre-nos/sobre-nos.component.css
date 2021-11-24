@@ -116,6 +116,7 @@ br {
   height: 90%;
 }
 
+
 /*CARD DA EQUIPE*/
 .container {
   max-width: 1100px;
@@ -143,6 +144,8 @@ br {
 }
 .card .card-image {
   position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -153,6 +156,12 @@ br {
   width: 100%;
   height: 100%;
 }
+
+.card:hover img {
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
 .card:hover .card-image {
   transform: translateY(-100px);
   transition: all 0.9s;
@@ -183,6 +192,7 @@ br {
   margin: 0 6px;
   transition: 0.4s;
   transform: translateY(200px);
+  opacity: 0;
 }
 .card:hover .social-icons li a {
   transform: translateY(0px);
@@ -240,6 +250,7 @@ br {
 .card:hover .profile-img--two {
   transform: rotateY(180deg);
 }
+
 /*PARCEIROS*/
 body {
   display: flex;
@@ -252,9 +263,9 @@ body {
 }
 .flip-box {
   display: flex;
-  /*align-content: stretch;*/
+  align-content: stretch;
   min-height: 200px;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   position: relative;
   border: 10px solid transparent;
   padding: 0;
