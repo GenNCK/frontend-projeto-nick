@@ -15,8 +15,11 @@ export class MenuComponent implements OnInit {
   hamburguer():any{
     const menu = document.querySelector('.toggle');
     const home = document.querySelector('.home');
+    const nav = document.querySelector('nav');
+
     menu?.classList.toggle('ativo');
     home?.classList.toggle('ativo');
+    nav?.classList.toggle('ativo');
   }
 
 }

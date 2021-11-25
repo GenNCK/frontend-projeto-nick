@@ -21,6 +21,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { MenuForumComponent } from './menu-forum/menu-forum.component';
+import { TechComponent } from './tech/tech.component';
 
 
 
@@ -43,6 +44,7 @@ import { MenuForumComponent } from './menu-forum/menu-forum.component';
     PostagemEditComponent,
     PostagemDeleteComponent,
     MenuForumComponent,
+    TechComponent,
    
     
   ],

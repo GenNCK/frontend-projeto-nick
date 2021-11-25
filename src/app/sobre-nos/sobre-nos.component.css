@@ -22,8 +22,9 @@ br {
 }
 .logo {
   position: relative;
-  width: 65px;
+  width: 60px;
   height: 65px;
+  margin: 8px;
   overflow: hidden;
 }
 .logo img {

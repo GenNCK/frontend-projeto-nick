@@ -9,8 +9,9 @@ header {
 
 header .logo {
   position: relative;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
+  margin: 8px;
   overflow: hidden;
 }
 
@@ -38,13 +39,12 @@ nav ul {
   display: flex;
   align-items: center;
   column-gap: 10px;
-}
-
-nav ul li {
   list-style: none;
 }
 
+
 nav ul li a {
+  display: block;
   text-decoration: none;
   padding: 5px 10px;
   color: rgba(0, 0, 0, 0.4);
@@ -93,9 +93,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 600px) {
   /*Esse comando deixará a home responsiva no mobile*/
-  nav {
-    display: none;
-  }
+
   button#hamburguer {
     display: block;
     border: none;
@@ -150,6 +148,45 @@ nav ul li a:hover {
   .toggle.ativo::after{
     background: #fff;
     transform: translateY(0) rotate(-45deg);
+  }
+
+  nav{
+    display: block;
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: all .6s;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  nav.ativo{
+    height: 100%;
+    left: 0;
+  }
+
+  nav ul{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+
+  nav ul li a{
+    padding: 14px 10px;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .botoes{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .botoes a{
+    width: 90%;
   }
 
 }
