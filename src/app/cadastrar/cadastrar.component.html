@@ -12,12 +12,12 @@
     <div class="col-md-5">
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
-          <h1 class="text-center-mb-3"> <strong>Cadastre-se</strong></h1>
+          <h1 class="text-center-mb-3 d-flex justify-content-center"> <strong>Cadastre-se</strong></h1>
         </div>
       </div>
       
-      <div class="form-group mr-5">
-        <label for="nome">Nome</label>
+      <div class="form-group">
+        <label for="nome">Nome*</label>
         <input [(ngModel)]='user.nome'
           class="form-control"
           type="text"
@@ -27,8 +27,8 @@
         />
       </div>
 
-      <div class="form-group mr-5">
-        <label for="usuario">Usuario</label>
+      <div class="form-group">
+        <label for="usuario">Usuario*</label>
         <input [(ngModel)]='user.usuario'
           class="form-control"
           type="usuario"
@@ -38,7 +38,7 @@
         />
       </div>
 
-      <div class="form-group mr-5">
+      <div class="form-group">
         <label for="foto">Link da Foto</label>
         <input [(ngModel)]='user.foto'
         class="form-control" 
@@ -48,8 +48,8 @@
         placeholder="Link da sua Foto">
     </div>
 
-      <div class="form-group mr-5">
-        <label for="senha">Senha</label>
+      <div class="form-group">
+        <label for="senha">Senha*</label>
         <input (input)='confirmSenha($event)'
           class="form-control"
           type="password"
@@ -59,8 +59,8 @@
         />
       </div>
 
-      <div class="form-group mr-5">
-        <label for="confirmSenha">Confirmar Senha</label>
+      <div class="form-group">
+        <label for="confirmSenha">Confirmar Senha*</label>
         <input [(ngModel)]='user.senha'
           class="form-control"
           type="password"
@@ -70,24 +70,12 @@
         />
       </div>
 
-      <div class="form-group mr-5">
-        <label for="tipo">Tipo de Usuário</label>
-        <select 
-        class="form-control" 
-        name="tipo" 
-        id="tipo" (change)= 'tipoUser($event)'>  
-            <option>Selecione um tipo de Usuário: </option>
-            <option value="normal">Normal</option>
-            <option value="adm">Administrador</option>
-        </select>
-    </div>
-
 
       <hr class="mt-4 mb-4" width="495" />
 
-      <p class="text-center justify align-center mr-5">Seja Bem Vindo!!!</p>
+      <p class="text-center justify align-center">Seja Bem Vindo!!!</p>
 
-      <div class="d-flex justify-content-center mr-5 mb-5">
+      <div class="d-flex justify-content-center mb-5">
         
         <button type="submit" class="btn btn-outline-danger mr-4" (click)='cadastrar()'>Cadastrar
         </button>

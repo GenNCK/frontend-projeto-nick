@@ -21,7 +21,6 @@ h1{
 
 #img-bg{
     background-image: url("https://i.imgur.com/YX1wgLH.jpg");
-
     min-height: 590px;
     background-position: center ;
     background-repeat: no-repeat;
@@ -31,4 +30,13 @@ h1{
 
 .botaoCad{
     text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    #img-bg{
+        display: none;
+    }
 }

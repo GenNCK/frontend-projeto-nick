@@ -29,3 +29,10 @@ h1{
   background-size: cover;
 
 }
+
+@media only screen and (max-width: 600px){
+
+  #img-bg{
+      display: none;
+  }
+}

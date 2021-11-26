@@ -36,8 +36,6 @@
           aria-controls="nav-minhasPostagens" aria-selected="false">Minhas
           postagens</a>
 
-        <a class="nav-item nav-link text-secondary font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
-          href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagem por Tema</a>
       </div>
     </nav>
 
@@ -108,32 +106,6 @@
             </div>
           </div>
         </div>
-
-      
-
-      <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-
-        <div *ngFor='let tema of listaTemas'>
-          <div class="card text-left direita mb-5" *ngFor='let i of tema.postagem'>
-            
-              <div class="card-header">
-                <h5>{{tema.titulo}}</h5>
-              </div>
-              <div class="card-body">
-              <h5 class="card-title">{{i.resumo}}</h5>
-              <p class="card-text">{{i.texto}}</p>
-              <p class="card-text"><small class="text-muted">
-                  {{i.data | date: 'dd/MM/yyyy'}} as {{i.data | date:'HH:mm'}}
-                </small></p>
-              <p class="card-text"><small class="text-muted">
-                  por: {{i.usuario.nome}}
-
-                </small></p>
-
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
 
@@ -153,31 +125,31 @@
           <div class="modal-body">
 
             <div class="form-group">
-              <label for="resumo">Resumo do seu depoimento!</label>
+              <label for="resumo">Resumo do seu depoimento*</label>
               <input [(ngModel)]='postagem.resumo' type="text" class="form-control" id="resumo"
                 placeholder="Digite o resumo">
             </div>
 
             <div class="form-group">
-              <label for="privacidade">Privacidade</label>
+              <label for="privacidade">Impacto*</label>
               <input [(ngModel)]='postagem.privacidade' type="text" class="form-control" id="privacidade"
-                placeholder="informe a sua privacidade">
+                placeholder="Baixo, Moderado e Grande">
             </div>
 
             <div class="form-group">
-              <label for="texto">Texto</label>
+              <label for="texto">Texto*</label>
               <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
             </div>
 
             <div class="form-group">
-              <label for="imagem">Imagem</label>
+              <label for="imagem">Imagem*</label>
               <input [(ngModel)]='postagem.imagem' type="text" class="form-control" id="imagem"
-                placeholder="Informe uma imagem pra sua postagem">
+                placeholder="Coloque o Link da Imagem">
             </div>
             
             <div class="form-group">
-              <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um
-                  novo</a>:</label>
+              <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:*</label>
+
               <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTema'>
                 <option *ngFor='let i of listaTemas' value="{{i.id}}">{{i.titulo}}</option>
               </select>
